@@ -21,7 +21,7 @@ Unlike traditional UI automation, this framework implements a **Hybrid Testing S
 * **Core:** Playwright
 * **Language:** TypeScript
 * **BDD:** CucumberJS
-* **Reporting:** Allure / HTML
+* **Reporting:**  Cucumber Report
 * **Utils:** `dotenv`, `fs-extra`
 
 ## 📂 Project Structure
