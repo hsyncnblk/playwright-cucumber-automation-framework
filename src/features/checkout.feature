@@ -3,7 +3,7 @@ Feature: E-Commerce Hybrid Checkout Flow
   Background:
     Given I am logged in to the application
 
-  @hybrid @checkout
+  @checkout
   Scenario Outline: Complete checkout with UI and DB validation
     Given I add "Sauce Labs Bike Light" to the cart and proceed to checkout
     When I fill the checkout form with "<firstName>", "<lastName>" and "<zipCode>"
