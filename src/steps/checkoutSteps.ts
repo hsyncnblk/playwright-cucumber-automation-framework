@@ -9,9 +9,9 @@ Given('I am logged in to the application', async function (this: CustomWorld) {
     await loginPage.login();
 });
 
-Given('I add a product to cart and proceed to checkout', async function (this: CustomWorld) {
+Given('I add {string} to the cart and proceed to checkout', async function (this: CustomWorld, productName: string) {
     const checkoutPage = new CheckoutPage(this.page);
-    await checkoutPage.addProductAndGoToCart();
+    await checkoutPage.addProductAndGoToCart(productName);
 });
 
 When('I fill the checkout form with {string}, {string} and {string}', 

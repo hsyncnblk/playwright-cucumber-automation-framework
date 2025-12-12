@@ -9,7 +9,8 @@ let browser: Browser;
 
 BeforeAll(async function () {
     browser = await chromium.launch({ 
-        headless: process.env.HEADLESS === 'true',
+        headless: false, 
+        slowMo: 1000,    
         args: ["--start-maximized"] 
     });
 });

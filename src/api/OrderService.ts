@@ -13,7 +13,7 @@ export class OrderService {
         
         const mockDbResponse = { id: orderId, status: "COMPLETED" };
         
-        console.log(`✅ DB RESPONSE: Sipariş durumu: ${mockDbResponse.status}`);
+        console.log(`DB RESPONSE: Sipariş durumu: ${mockDbResponse.status}`);
         expect(mockDbResponse.status).toBe(expectedStatus);
     }
 }
