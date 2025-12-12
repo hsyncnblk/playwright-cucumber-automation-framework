@@ -1,40 +1,38 @@
-# 🚀 Enterprise Test Automation Framework (Playwright & Cucumber)
-
 ![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=for-the-badge&logo=Playwright&logoColor=white)
 ![Cucumber](https://img.shields.io/badge/Cucumber-23D96C?style=for-the-badge&logo=cucumber&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)
 
-> **"Kalite bir eylem değil, bir alışkanlıktır."** – Aristotle
+## 💡 Project Overview
 
-Bu proje, modern web uygulamaları için **ölçeklenebilir**, **sürdürülebilir** ve **SOLID prensiplerine** sadık bir test otomasyon mimarisi örneğidir. E-Ticaret senaryolarını simüle ederek, UI etkileşimlerini Backend (API/DB) doğrulamalarıyla birleştiren **Hibrit Test Yaklaşımını** sergiler.
+This project is a modern **Test Automation Framework** built to validate end-to-end e-commerce flows.
 
----
+Unlike traditional UI automation, this framework implements a **Hybrid Testing Strategy**. It validates user interactions on the frontend while simultaneously verifying data integrity via Backend/API simulations within the same test scenario.
 
-## 🏗️ Mimari ve Tasarım Desenleri
+## ✨ Key Features
 
-Bu framework, endüstri standartlarındaki en iyi pratikler (Best Practices) kullanılarak tasarlanmıştır:
+* **Hybrid Verification (UI + API):** Checks if the "Order Completed" status in the UI matches the backend database record.
+* **Page Object Model (POM):** Modular design using TypeScript classes for maintainability and reusability.
+* **BDD with Cucumber:** Scenarios are written in Gherkin (English) to bridge the gap between QA and Business.
+* **Auto-Capture on Failure:** Automatically captures screenshots and browser context if a test fails.
+* **Environment Management:** Supports multi-environment execution (QA, Staging) via `.env` configuration.
 
-* **Page Object Model (POM):** Kod tekrarını önlemek ve bakımı kolaylaştırmak için her sayfa kendi sınıfına ayrılmıştır.
-* **Behavior Driven Development (BDD):** Gherkin sözdizimi ile teknik olmayan paydaşların da anlayabileceği "Yaşayan Dokümantasyon" (Living Documentation).
-* **SOLID Prensipleri:**
-    * *Single Responsibility:* API servisleri ve UI sayfa objeleri birbirinden ayrılmıştır.
-    * *Open/Closed:* `BasePage` yapısı ile yeni özellikler mevcut kodu bozmadan eklenebilir.
-* **Hybrid Testing Strategy:** Kritik işlemlerde (Örn: Sipariş tamamlama) sadece UI mesajına güvenilmez; arka planda API/DB simülasyonu ile veri bütünlüğü doğrulanır.
+## 🛠️ Tech Stack
 
----
+* **Core:** Playwright
+* **Language:** TypeScript
+* **BDD:** CucumberJS
+* **Reporting:**  Cucumber Report
+* **Utils:** `dotenv`, `fs-extra`
 
-## 📂 Proje Yapısı
+## 📂 Project Structure
+
+The project follows industry-standard directory structure:
 
 ```text
 src/
-├── api/             # 🧠 Backend/DB Simülasyon Servisleri
-├── features/        # 📝 Gherkin (.feature) Senaryo Dosyaları
-├── pages/           # 📱 Page Object Model (UI Katmanı)
-│   ├── BasePage.ts  #    Miras alınan ana yapı
-│   └── ...
-├── steps/           # 🔗 Step Definitions (Feature ve Code arasındaki köprü)
-├── support/         # ⚙️ Konfigürasyon, Hooks ve Custom World
-│   ├── hooks.ts     #    Screenshot on Failure & Browser Management
-│   └── custom-world.ts # Context Yönetimi
-└── utils/           # 🛠️ Yardımcı Fonksiyonlar
+├── api/             # Backend simulation services (Hybrid Logic)
+├── features/        # Test scenarios in Gherkin format
+├── pages/           # Page Objects (UI Elements & Methods)
+├── steps/           # Step definitions linking Gherkin to Code
+├── support/         # Hooks (Setup, Teardown, Screenshots)
+└── utils/           # Helper functions
