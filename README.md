@@ -28,13 +28,3 @@ Ensure you have the following software installed on your machine:
 * **Core:** TypeScript
 * **Browser Automation:** Playwright
 * **Test Runner:** CucumberJS
-
-## Getting Started
-
-Clone the repo and install dependencies:
-
-```bash
-git clone https://github.com/hsyncnblk/playwright-cucumber-automation-framework
-cd playwright-cucumber-automation-framework
-npm install
-npx playwright install
