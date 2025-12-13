@@ -1,0 +1,459 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "e-commerce-hybrid-checkout-flow;complete-checkout-with-ui-and-db-validation",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Complete checkout with UI and DB validation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 155393599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in to the application",
+            "match": {
+              "location": "src\\steps\\checkoutSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 824341899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I add \"Sauce Labs Bike Light\" to the cart and proceed to checkout",
+            "match": {
+              "location": "src\\steps\\checkoutSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 171664700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I fill the checkout form with \"Huseyin\", \"Test\" and \"34000\"",
+            "match": {
+              "location": "src\\steps\\checkoutSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140949200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I finish the order",
+            "match": {
+              "location": "src\\steps\\checkoutSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54829699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the \"Thank you for your order\" message on UI",
+            "match": {
+              "location": "src\\steps\\checkoutSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21117200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "The order status should be \"COMPLETED\" in the Database",
+            "match": {
+              "location": "src\\steps\\checkoutSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 503851300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 52757500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@hybrid",
+            "line": 6
+          },
+          {
+            "name": "@checkout",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "e-commerce-hybrid-checkout-flow;complete-checkout-with-ui-and-db-validation",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Complete checkout with UI and DB validation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 165571200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in to the application",
+            "match": {
+              "location": "src\\steps\\checkoutSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 725809999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I add \"Sauce Labs Bike Light\" to the cart and proceed to checkout",
+            "match": {
+              "location": "src\\steps\\checkoutSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129905400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I fill the checkout form with \"Ayse\", \"Demo\" and \"10001\"",
+            "match": {
+              "location": "src\\steps\\checkoutSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106424100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I finish the order",
+            "match": {
+              "location": "src\\steps\\checkoutSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41861099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the \"Thank you for your order\" message on UI",
+            "match": {
+              "location": "src\\steps\\checkoutSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11101799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "The order status should be \"COMPLETED\" in the Database",
+            "match": {
+              "location": "src\\steps\\checkoutSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 514241100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 47401800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@hybrid",
+            "line": 6
+          },
+          {
+            "name": "@checkout",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "e-commerce-hybrid-checkout-flow",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "E-Commerce Hybrid Checkout Flow",
+    "tags": [],
+    "uri": "src\\features\\checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "product-interactions-and-sorting;verify-product-sorting-by-price-(low-to-high)",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify product sorting by Price (Low to High)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 197071799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in to the application",
+            "match": {
+              "location": "src\\steps\\checkoutSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 725361200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the inventory page",
+            "match": {
+              "location": "src\\steps\\productSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6530799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I sort the products by \"Price (low to high)\"",
+            "match": {
+              "location": "src\\steps\\productSteps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13646499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "The products should be sorted by price in ascending order",
+            "match": {
+              "location": "src\\steps\\productSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70433600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 31829600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sorting",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-interactions-and-sorting;add-and-remove-item-from-cart",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Add and Remove item from cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 175230799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in to the application",
+            "match": {
+              "location": "src\\steps\\checkoutSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 710974800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I am on the inventory page",
+            "match": {
+              "location": "src\\steps\\productSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5586599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I add \"Sauce Labs Backpack\" to the cart",
+            "match": {
+              "location": "src\\steps\\productSteps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54206499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I navigate to cart page",
+            "match": {
+              "location": "src\\steps\\productSteps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42322900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see \"Sauce Labs Backpack\" in the cart",
+            "match": {
+              "location": "src\\steps\\productSteps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8739000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I remove \"Sauce Labs Backpack\" from the cart",
+            "match": {
+              "location": "src\\steps\\productSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42646200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "The cart badge should not be visible",
+            "match": {
+              "location": "src\\steps\\productSteps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5068500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 49578400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cart",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "product-interactions-and-sorting",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Product Interactions and Sorting",
+    "tags": [],
+    "uri": "src\\features\\products.feature"
+  }
+]
