@@ -34,7 +34,7 @@ Ensure you have the following software installed on your machine:
 Clone the repo and install dependencies:
 
 ```bash
-git clone [https://github.com/hsyncnblk/playwright-cucumber-automation-framework](https://github.com/hsyncnblk/playwright-cucumber-automation-framework)
+git clone https://github.com/hsyncnblk/playwright-cucumber-automation-framework
 cd playwright-cucumber-automation-framework
 npm install
 npx playwright install
